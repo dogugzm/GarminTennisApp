@@ -32,9 +32,10 @@ A modern, high-performance Tennis score tracker and activity recorder applicatio
   - Tiebreak & Super Tiebreak logic built-in.
   - Full **Undo** functionality for accidental point inputs.
 
-- **⏱️ Flexible Activity & Warmup Mode:**
-  - **Start Activity:** Track calories, duration, and heart rate during warmup before starting the actual match.
-  - **Start Match:** Seamlessly transition into tennis match scoring & server selection at any time.
+- **⏱️ Flexible Activity & Training / Warmup Mode:**
+  - **Start Activity First:** Track your pre-match warmups, practice rallies, calories, heart rate, and distance before starting the match.
+  - **Seamless Match Transition:** Easily launch tennis match scoring at any point via the menu without interrupting your ongoing activity recording.
+  - **All-in-One Session Logging:** Warmup and match metrics are combined into a single, comprehensive Garmin Connect activity record.
 
 - **📊 Comprehensive 3-Page Graphical Statistics:**
   - **Performance Card View:** Real-time Calorie burn (`kcal`), Elapsed Distance (`km`), Current Heart Rate (`bpm`), and Match Duration timer.
