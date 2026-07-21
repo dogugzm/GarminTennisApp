@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/dogu/GarminTennis/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisView.mc" id="1" lineNum="4" parent="globals/GarminTennisView" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisApp.mc" id="2" lineNum="29" parent="globals" pc="268435472" symbol="getApp"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisApp.mc" id="2" lineNum="30" parent="globals" pc="268435482" symbol="getApp"/>
+        <entry filename="/Users/dogu/GarminTennis/source/Build/gen/006-B4536-00/source/Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435493" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisApp.mc" id="4" lineNum="5" parent="globals/GarminTennisApp" pc="268435513" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="5" lineNum="14" parent="globals/MatchState" pc="268435525" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="6" lineNum="5" parent="globals/GarminTennisDelegate" pc="268435535" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisView.mc" id="8" lineNum="11" parent="globals/GarminTennisView" pc="268435547" symbol="onLayout"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisView.mc" id="8" lineNum="12" parent="globals/GarminTennisView" pc="268435549" symbol="onLayout"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisView.mc" id="9" lineNum="6" parent="globals/GarminTennisView" pc="268435583" symbol="initialize"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisView.mc" id="9" lineNum="7" parent="globals/GarminTennisView" pc="268435585" symbol="initialize"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisView.mc" id="11" lineNum="22" parent="globals/GarminTennisView" pc="268435598" symbol="onUpdate"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisView.mc" id="11" lineNum="23" parent="globals/GarminTennisView" pc="268435601" symbol="onUpdate"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisView.mc" id="11" lineNum="24" parent="globals/GarminTennisView" pc="268435613" symbol="onUpdate"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisView.mc" id="11" lineNum="26" parent="globals/GarminTennisView" pc="268435621" symbol="onUpdate"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisView.mc" id="11" lineNum="27" parent="globals/GarminTennisView" pc="268435644" symbol="onUpdate"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisView.mc" id="11" lineNum="30" parent="globals/GarminTennisView" pc="268435697" symbol="onUpdate"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisView.mc" id="11" lineNum="31" parent="globals/GarminTennisView" pc="268435717" symbol="onUpdate"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisView.mc" id="11" lineNum="33" parent="globals/GarminTennisView" pc="268435737" symbol="onUpdate"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisView.mc" id="11" lineNum="34" parent="globals/GarminTennisView" pc="268435743" symbol="onUpdate"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisView.mc" id="11" lineNum="36" parent="globals/GarminTennisView" pc="268435759" symbol="onUpdate"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisView.mc" id="11" lineNum="37" parent="globals/GarminTennisView" pc="268435765" symbol="onUpdate"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisView.mc" id="11" lineNum="41" parent="globals/GarminTennisView" pc="268435781" symbol="onUpdate"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisApp.mc" id="12" lineNum="15" parent="globals/GarminTennisApp" pc="268435798" symbol="onStart"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisApp.mc" id="13" lineNum="23" parent="globals/GarminTennisApp" pc="268435801" symbol="getInitialView"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisApp.mc" id="13" lineNum="24" parent="globals/GarminTennisApp" pc="268435803" symbol="getInitialView"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisApp.mc" id="14" lineNum="9" parent="globals/GarminTennisApp" pc="268435850" symbol="initialize"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisApp.mc" id="14" lineNum="10" parent="globals/GarminTennisApp" pc="268435852" symbol="initialize"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisApp.mc" id="14" lineNum="11" parent="globals/GarminTennisApp" pc="268435864" symbol="initialize"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisApp.mc" id="15" lineNum="19" parent="globals/GarminTennisApp" pc="268435890" symbol="onStop"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="16" lineNum="30" parent="globals/MatchState" pc="268435893" symbol="saveState"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="16" lineNum="32" parent="globals/MatchState" pc="268435896" symbol="saveState"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="16" lineNum="40" parent="globals/MatchState" pc="268435969" symbol="saveState"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="17" lineNum="116" parent="globals/MatchState" pc="268435986" symbol="getP1PointString"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="17" lineNum="117" parent="globals/MatchState" pc="268435988" symbol="getP1PointString"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="18" lineNum="43" parent="globals/MatchState" pc="268436007" symbol="undo"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="18" lineNum="44" parent="globals/MatchState" pc="268436010" symbol="undo"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="18" lineNum="45" parent="globals/MatchState" pc="268436026" symbol="undo"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="18" lineNum="46" parent="globals/MatchState" pc="268436048" symbol="undo"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="18" lineNum="47" parent="globals/MatchState" pc="268436063" symbol="undo"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="18" lineNum="48" parent="globals/MatchState" pc="268436078" symbol="undo"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="18" lineNum="49" parent="globals/MatchState" pc="268436093" symbol="undo"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="18" lineNum="50" parent="globals/MatchState" pc="268436108" symbol="undo"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="18" lineNum="51" parent="globals/MatchState" pc="268436123" symbol="undo"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="18" lineNum="54" parent="globals/MatchState" pc="268436138" symbol="undo"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="19" lineNum="99" parent="globals/MatchState" pc="268436177" symbol="getPointString"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="19" lineNum="100" parent="globals/MatchState" pc="268436179" symbol="getPointString"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="19" lineNum="100" parent="globals/MatchState" pc="268436186" symbol="getPointString"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="19" lineNum="101" parent="globals/MatchState" pc="268436195" symbol="getPointString"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="19" lineNum="101" parent="globals/MatchState" pc="268436203" symbol="getPointString"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="19" lineNum="102" parent="globals/MatchState" pc="268436212" symbol="getPointString"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="19" lineNum="102" parent="globals/MatchState" pc="268436220" symbol="getPointString"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="19" lineNum="103" parent="globals/MatchState" pc="268436229" symbol="getPointString"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="19" lineNum="103" parent="globals/MatchState" pc="268436237" symbol="getPointString"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="19" lineNum="106" parent="globals/MatchState" pc="268436246" symbol="getPointString"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="19" lineNum="107" parent="globals/MatchState" pc="268436254" symbol="getPointString"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="19" lineNum="108" parent="globals/MatchState" pc="268436262" symbol="getPointString"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="19" lineNum="109" parent="globals/MatchState" pc="268436271" symbol="getPointString"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="19" lineNum="110" parent="globals/MatchState" pc="268436279" symbol="getPointString"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="19" lineNum="113" parent="globals/MatchState" pc="268436291" symbol="getPointString"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="20" lineNum="16" parent="globals/MatchState" pc="268436299" symbol="initialize"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="20" lineNum="17" parent="globals/MatchState" pc="268436301" symbol="initialize"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="21" lineNum="20" parent="globals/MatchState" pc="268436309" symbol="resetMatch"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="21" lineNum="21" parent="globals/MatchState" pc="268436311" symbol="resetMatch"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="21" lineNum="22" parent="globals/MatchState" pc="268436319" symbol="resetMatch"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="21" lineNum="23" parent="globals/MatchState" pc="268436327" symbol="resetMatch"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="21" lineNum="24" parent="globals/MatchState" pc="268436335" symbol="resetMatch"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="21" lineNum="25" parent="globals/MatchState" pc="268436343" symbol="resetMatch"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="21" lineNum="26" parent="globals/MatchState" pc="268436351" symbol="resetMatch"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="21" lineNum="27" parent="globals/MatchState" pc="268436359" symbol="resetMatch"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="22" lineNum="58" parent="globals/MatchState" pc="268436369" symbol="pointWonBy"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="22" lineNum="59" parent="globals/MatchState" pc="268436371" symbol="pointWonBy"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="22" lineNum="61" parent="globals/MatchState" pc="268436378" symbol="pointWonBy"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="22" lineNum="62" parent="globals/MatchState" pc="268436386" symbol="pointWonBy"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="22" lineNum="64" parent="globals/MatchState" pc="268436404" symbol="pointWonBy"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="22" lineNum="67" parent="globals/MatchState" pc="268436419" symbol="pointWonBy"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="23" lineNum="70" parent="globals/MatchState" pc="268436427" symbol="checkGameWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="23" lineNum="72" parent="globals/MatchState" pc="268436429" symbol="checkGameWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="23" lineNum="73" parent="globals/MatchState" pc="268436457" symbol="checkGameWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="23" lineNum="74" parent="globals/MatchState" pc="268436472" symbol="checkGameWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="23" lineNum="75" parent="globals/MatchState" pc="268436480" symbol="checkGameWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="23" lineNum="76" parent="globals/MatchState" pc="268436488" symbol="checkGameWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="23" lineNum="77" parent="globals/MatchState" pc="268436498" symbol="checkGameWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="23" lineNum="78" parent="globals/MatchState" pc="268436526" symbol="checkGameWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="23" lineNum="79" parent="globals/MatchState" pc="268436541" symbol="checkGameWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="23" lineNum="80" parent="globals/MatchState" pc="268436549" symbol="checkGameWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="23" lineNum="81" parent="globals/MatchState" pc="268436557" symbol="checkGameWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="24" lineNum="120" parent="globals/MatchState" pc="268436568" symbol="getP2PointString"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="24" lineNum="121" parent="globals/MatchState" pc="268436570" symbol="getP2PointString"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="25" lineNum="85" parent="globals/MatchState" pc="268436589" symbol="checkSetWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="25" lineNum="86" parent="globals/MatchState" pc="268436591" symbol="checkSetWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="25" lineNum="87" parent="globals/MatchState" pc="268436619" symbol="checkSetWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="25" lineNum="88" parent="globals/MatchState" pc="268436634" symbol="checkSetWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="25" lineNum="89" parent="globals/MatchState" pc="268436642" symbol="checkSetWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="25" lineNum="90" parent="globals/MatchState" pc="268436653" symbol="checkSetWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="25" lineNum="91" parent="globals/MatchState" pc="268436681" symbol="checkSetWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="25" lineNum="92" parent="globals/MatchState" pc="268436696" symbol="checkSetWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/MatchState.mc" id="25" lineNum="93" parent="globals/MatchState" pc="268436704" symbol="checkSetWin"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="26" lineNum="33" parent="globals/GarminTennisDelegate" pc="268436716" symbol="onBack"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="26" lineNum="34" parent="globals/GarminTennisDelegate" pc="268436719" symbol="onBack"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="26" lineNum="35" parent="globals/GarminTennisDelegate" pc="268436731" symbol="onBack"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="26" lineNum="36" parent="globals/GarminTennisDelegate" pc="268436744" symbol="onBack"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="26" lineNum="37" parent="globals/GarminTennisDelegate" pc="268436755" symbol="onBack"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="27" lineNum="11" parent="globals/GarminTennisDelegate" pc="268436757" symbol="onMenu"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="27" lineNum="13" parent="globals/GarminTennisDelegate" pc="268436759" symbol="onMenu"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="28" lineNum="7" parent="globals/GarminTennisDelegate" pc="268436761" symbol="initialize"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="28" lineNum="8" parent="globals/GarminTennisDelegate" pc="268436763" symbol="initialize"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="29" lineNum="16" parent="globals/GarminTennisDelegate" pc="268436776" symbol="onKey"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="29" lineNum="17" parent="globals/GarminTennisDelegate" pc="268436779" symbol="onKey"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="29" lineNum="18" parent="globals/GarminTennisDelegate" pc="268436788" symbol="onKey"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="29" lineNum="20" parent="globals/GarminTennisDelegate" pc="268436800" symbol="onKey"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="29" lineNum="21" parent="globals/GarminTennisDelegate" pc="268436808" symbol="onKey"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="29" lineNum="22" parent="globals/GarminTennisDelegate" pc="268436825" symbol="onKey"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="29" lineNum="23" parent="globals/GarminTennisDelegate" pc="268436836" symbol="onKey"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="29" lineNum="24" parent="globals/GarminTennisDelegate" pc="268436841" symbol="onKey"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="29" lineNum="25" parent="globals/GarminTennisDelegate" pc="268436849" symbol="onKey"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="29" lineNum="26" parent="globals/GarminTennisDelegate" pc="268436866" symbol="onKey"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="29" lineNum="27" parent="globals/GarminTennisDelegate" pc="268436877" symbol="onKey"/>
+        <entry filename="/Users/dogu/GarminTennis/source/GarminTennisDelegate.mc" id="29" lineNum="29" parent="globals/GarminTennisDelegate" pc="268436882" symbol="onKey"/>
+        <entry filename="/Users/dogu/GarminTennis/source/Build/gen/006-B4536-00/source/Rez.mcgen" id="30" lineNum="13" parent="globals/Rez/Layouts" pc="268436884" symbol="MainLayout"/>
+        <entry filename="/Users/dogu/GarminTennis/source/Build/gen/006-B4536-00/source/Rez.mcgen" id="30" lineNum="14" parent="globals/Rez/Layouts" pc="268436895" symbol="MainLayout"/>
+        <entry filename="/Users/dogu/GarminTennis/source/Build/gen/006-B4536-00/source/Rez.mcgen" id="30" lineNum="16" parent="globals/Rez/Layouts" pc="268436904" symbol="MainLayout"/>
+        <entry filename="/Users/dogu/GarminTennis/source/Build/gen/006-B4536-00/source/Rez.mcgen" id="30" lineNum="18" parent="globals/Rez/Layouts" pc="268437027" symbol="MainLayout"/>
+        <entry filename="/Users/dogu/GarminTennis/source/Build/gen/006-B4536-00/source/Rez.mcgen" id="30" lineNum="20" parent="globals/Rez/Layouts" pc="268437127" symbol="MainLayout"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="21" symbol="p2Games"/>
+        <entry field="true" id="8389346" symbol="text"/>
+        <entry id="13" method="true" symbol="checkSetWin"/>
+        <entry id="12" method="true" symbol="checkGameWin"/>
+        <entry id="6" object="true" symbol="GarminTennisApp"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="25" method="true" symbol="resetMatch"/>
+        <entry id="29" method="true" symbol="MainLayout"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="17" symbol="history"/>
+        <entry field="true" id="30" symbol="AppName"/>
+        <entry field="true" id="20" symbol="p1Sets"/>
+        <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8389080" method="true" symbol="onMenu"/>
+        <entry field="true" id="11" symbol="matchState"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="8389081" method="true" symbol="onBack"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="26" method="true" symbol="saveState"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry field="true" id="19" symbol="p1Points"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry field="true" id="22" symbol="p2Points"/>
+        <entry id="16" method="true" symbol="getPointString"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry field="true" id="18" symbol="p1Games"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="9" object="true" symbol="MatchState"/>
+        <entry id="14" method="true" symbol="getP1PointString"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="15" method="true" symbol="getP2PointString"/>
+        <entry field="true" id="32" symbol="Player2"/>
+        <entry field="true" id="31" symbol="Player1"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="33" symbol="Start"/>
+        <entry field="true" id="28" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="24" method="true" symbol="pointWonBy"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="8389347" symbol="color"/>
+        <entry id="8389097" method="true" symbol="onKey"/>
+        <entry id="27" method="true" symbol="undo"/>
+        <entry id="10" module="true" symbol="Layouts"/>
+        <entry id="7" object="true" symbol="GarminTennisDelegate"/>
+        <entry id="8" object="true" symbol="GarminTennisView"/>
+        <entry field="true" id="23" symbol="p2Sets"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435582" name="dc" stackId="1" startPc="268435547"/>
+        <entry arg="true" endPc="268435797" name="dc" stackId="1" startPc="268435598"/>
+        <entry endPc="268435796" name="app" stackId="2" startPc="268435601"/>
+        <entry endPc="268435796" name="state" stackId="3" startPc="268435601"/>
+        <entry endPc="268435796" name="scoreStr" stackId="4" startPc="268435601"/>
+        <entry endPc="268435796" name="setStr" stackId="5" startPc="268435601"/>
+        <entry endPc="268435796" name="scoreLabel" stackId="6" startPc="268435601"/>
+        <entry endPc="268435796" name="setLabel" stackId="7" startPc="268435601"/>
+        <entry endPc="268435984" name="state" stackId="1" startPc="268435896"/>
+        <entry endPc="268436172" name="state" stackId="1" startPc="268436026"/>
+        <entry arg="true" endPc="268436298" name="points" stackId="1" startPc="268436177"/>
+        <entry arg="true" endPc="268436298" name="oppPoints" stackId="2" startPc="268436177"/>
+        <entry arg="true" endPc="268436426" name="player" stackId="1" startPc="268436369"/>
+        <entry endPc="268436756" name="app" stackId="1" startPc="268436719"/>
+        <entry arg="true" endPc="268436883" name="keyEvent" stackId="1" startPc="268436776"/>
+        <entry endPc="268436883" name="key" stackId="2" startPc="268436779"/>
+        <entry endPc="268436883" name="app" stackId="3" startPc="268436779"/>
+        <entry arg="true" endPc="268437141" name="dc" stackId="1" startPc="268436884"/>
+        <entry endPc="268437141" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268436895"/>
+        <entry endPc="268437141" name="rez_cmp_local_text_scoreLabel" stackId="3" startPc="268436895"/>
+        <entry endPc="268437141" name="rez_cmp_local_text_setLabel" stackId="4" startPc="268436895"/>
+    </localVars>
+    <deviceInfo deviceVersion="e6263c2a80ff43933f83afa71f1f6645dc2cb4a3" partNumber="006-B4536-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Start"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Player2"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Player1"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="58" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/GarminTennisView" offset="143" parentId="globals" symbolId="GarminTennisView" type="class"/>
+        <dataEntry label="globals/Rez" offset="223" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/GarminTennisApp" offset="276" parentId="globals" symbolId="GarminTennisApp" type="class"/>
+        <dataEntry label="globals/MatchState" offset="356" parentId="globals" symbolId="MatchState" type="class"/>
+        <dataEntry label="globals/GarminTennisDelegate" offset="544" parentId="globals" symbolId="GarminTennisDelegate" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="615" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="650" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="685" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="GarminTennisView" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435492" name="getApp" startPc="268435472">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="Rez" startPc="268435493">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="GarminTennisApp" startPc="268435513">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435534" name="&lt;init&gt;" parent="MatchState" startPc="268435525">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435546" name="&lt;init&gt;" parent="GarminTennisDelegate" startPc="268435535">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="GarminTennisView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435582" name="onLayout" parent="GarminTennisView" startPc="268435547">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435597" name="initialize" parent="GarminTennisView" startPc="268435583">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="GarminTennisView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435797" name="onUpdate" parent="GarminTennisView" startPc="268435598">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435800" name="onStart" parent="GarminTennisApp" startPc="268435798">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435849" name="getInitialView" parent="GarminTennisApp" startPc="268435801">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435889" name="initialize" parent="GarminTennisApp" startPc="268435850">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435892" name="onStop" parent="GarminTennisApp" startPc="268435890">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435985" name="saveState" parent="MatchState" startPc="268435893">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436006" name="getP1PointString" parent="MatchState" startPc="268435986">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436176" name="undo" parent="MatchState" startPc="268436007">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436298" name="getPointString" parent="MatchState" startPc="268436177">
+            <param id="points"/>
+            <param id="oppPoints"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436308" name="initialize" parent="MatchState" startPc="268436299">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436368" name="resetMatch" parent="MatchState" startPc="268436309">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436426" name="pointWonBy" parent="MatchState" startPc="268436369">
+            <param id="player"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436567" name="checkGameWin" parent="MatchState" startPc="268436427">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436588" name="getP2PointString" parent="MatchState" startPc="268436568">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436715" name="checkSetWin" parent="MatchState" startPc="268436589">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436756" name="onBack" parent="GarminTennisDelegate" startPc="268436716">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436760" name="onMenu" parent="GarminTennisDelegate" startPc="268436757">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436775" name="initialize" parent="GarminTennisDelegate" startPc="268436761">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436883" name="onKey" parent="GarminTennisDelegate" startPc="268436776">
+            <param id="keyEvent"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437141" name="MainLayout" parent="Layouts" startPc="268436884">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

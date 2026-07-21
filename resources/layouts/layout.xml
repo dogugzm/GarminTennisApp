@@ -1,0 +1,4 @@
+<layout id="MainLayout">
+    <label id="scoreLabel" x="center" y="center" font="Gfx.FONT_LARGE" text="0 - 0" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" />
+    <label id="setLabel" x="center" y="20" font="Gfx.FONT_MEDIUM" text="Sets: 0 - 0" color="Gfx.COLOR_LT_GRAY" justification="Gfx.TEXT_JUSTIFY_CENTER" />
+</layout>
