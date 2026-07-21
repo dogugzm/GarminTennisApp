@@ -8,6 +8,20 @@ A modern, high-performance Tennis score tracker and activity recorder applicatio
 
 ---
 
+## 📸 App Screenshots & User Interface
+
+### 🎾 Main Menu & In-Match Scoreboard
+| Main Menu | Scoreboard Display | Server Selection |
+| :---: | :---: | :---: |
+| <img src="screenshots/main.png" width="230" alt="Main Menu" /> | <img src="screenshots/main2.png" width="230" alt="Scoreboard" /> | <img src="screenshots/main3.png" width="230" alt="Server Selection" /> |
+
+### 📊 In-Match Analytics & Performance
+| Performance Metrics | Serve Statistics | Set Summary |
+| :---: | :---: | :---: |
+| <img src="screenshots/perf.png" width="230" alt="Performance Metrics" /> | <img src="screenshots/servestats.png" width="230" alt="Serve Statistics" /> | <img src="screenshots/setdata.png" width="230" alt="Set Breakdown" /> |
+
+---
+
 ## ✨ Features
 
 - **🎾 Real-time Tennis Score Tracking:**
