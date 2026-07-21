@@ -66,17 +66,6 @@ class GarminTennisView extends WatchUi.View {
             
             dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
             dc.drawText(cx, cy, Graphics.FONT_TINY, "WHO SERVES?", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-
-            // Activity Timer & Calorie header if activity is already running
-            if (state.isActivityStarted) {
-                var totalSecs = state.getMatchDurationSeconds();
-                var mins = (totalSecs / 60).toNumber();
-                var secs = (totalSecs % 60).toNumber();
-                var timerStr = mins.format("%02d") + ":" + secs.format("%02d");
-
-                dc.setColor(0x00FF66, Graphics.COLOR_TRANSPARENT);
-                dc.drawText(cx, 30, Graphics.FONT_XTINY, "● RECORDING: " + timerStr, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-            }
             
             return;
         }
