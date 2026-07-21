@@ -229,32 +229,36 @@ class StatsDelegate extends WatchUi.BehaviorDelegate {
         return true;
     }
 
+    function onNextPage() as Boolean {
+        StatsView.page = (StatsView.page + 1) % 3;
+        WatchUi.requestUpdate();
+        return true;
+    }
+
+    function onPreviousPage() as Boolean {
+        StatsView.page = (StatsView.page + 2) % 3;
+        WatchUi.requestUpdate();
+        return true;
+    }
+
     function onKey(keyEvent as WatchUi.KeyEvent) as Boolean {
         var key = keyEvent.getKey();
         if (key == WatchUi.KEY_ENTER || key == WatchUi.KEY_START) {
             return onSelect();
         } else if (key == WatchUi.KEY_DOWN) {
-            StatsView.page = (StatsView.page + 1) % 3;
-            WatchUi.requestUpdate();
-            return true;
+            return onNextPage();
         } else if (key == WatchUi.KEY_UP) {
-            StatsView.page = (StatsView.page + 2) % 3;
-            WatchUi.requestUpdate();
-            return true;
+            return onPreviousPage();
         }
         return false;
     }
 
     function onSwipe(swipeEvent as WatchUi.SwipeEvent) as Boolean {
         var dir = swipeEvent.getDirection();
-        if (dir == WatchUi.SWIPE_DOWN || dir == WatchUi.SWIPE_UP) {
-            if (dir == WatchUi.SWIPE_DOWN) {
-                StatsView.page = (StatsView.page + 1) % 3;
-            } else {
-                StatsView.page = (StatsView.page + 2) % 3;
-            }
-            WatchUi.requestUpdate();
-            return true;
+        if (dir == WatchUi.SWIPE_UP) {
+            return onNextPage();
+        } else if (dir == WatchUi.SWIPE_DOWN) {
+            return onPreviousPage();
         }
         return false;
     }
