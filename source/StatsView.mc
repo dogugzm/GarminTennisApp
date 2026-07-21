@@ -113,8 +113,12 @@ class StatsView extends WatchUi.View {
             dc.drawText(cx, 260, Graphics.FONT_SMALL, timerStr, centerVc);
 
             // Footer hint
-            dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(cx, 375, Graphics.FONT_XTINY, "Serve Stats >", centerVc);
+            dc.setColor(0x00FF66, Graphics.COLOR_TRANSPARENT);
+            if (!state.isMatchStarted) {
+                dc.drawText(cx, 375, Graphics.FONT_XTINY, "SELECT: Start Match  |  DOWN: Stats >", centerVc);
+            } else {
+                dc.drawText(cx, 375, Graphics.FONT_XTINY, "Serve Stats >", centerVc);
+            }
 
         } else if (page == 1) {
             // --- PAGE 1: SERVE STATS ---
@@ -219,9 +223,17 @@ class StatsDelegate extends WatchUi.BehaviorDelegate {
         BehaviorDelegate.initialize();
     }
 
+    function onSelect() as Boolean {
+        var app = Application.getApp() as GarminTennisApp;
+        WatchUi.pushView(new GarminTennisView(), new GarminTennisDelegate(), WatchUi.SLIDE_LEFT);
+        return true;
+    }
+
     function onKey(keyEvent as WatchUi.KeyEvent) as Boolean {
         var key = keyEvent.getKey();
-        if (key == WatchUi.KEY_DOWN || key == WatchUi.KEY_ENTER) {
+        if (key == WatchUi.KEY_ENTER || key == WatchUi.KEY_START) {
+            return onSelect();
+        } else if (key == WatchUi.KEY_DOWN) {
             StatsView.page = (StatsView.page + 1) % 3;
             WatchUi.requestUpdate();
             return true;

@@ -49,7 +49,8 @@ class GarminTennisMenuDelegate extends WatchUi.Menu2InputDelegate {
         
         if (id.equals("activity")) {
             state.startActivity();
-            WatchUi.pushView(new GarminTennisView(), new GarminTennisDelegate(), WatchUi.SLIDE_LEFT);
+            StatsView.page = 0;
+            WatchUi.pushView(new StatsView(), new StatsDelegate(), WatchUi.SLIDE_LEFT);
         } else if (id.equals("start")) {
             if (!state.isActivityStarted) {
                 state.startActivity();
