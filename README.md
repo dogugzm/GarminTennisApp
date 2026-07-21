@@ -28,6 +28,7 @@ A modern, high-performance Tennis score tracker and activity recorder applicatio
   - Standard point scoring (0, 15, 30, 40, Game, Deuce, Advantage).
   - Live 1st Serve, 2nd Serve & Double Fault (DF) tracking.
   - Configurable Sets (1 Set, Best of 3, Best of 5).
+  - **Configurable Set Length:** Choose **6 Games / Set** (Standard) or **4 Games / Set** (Fast4 Tennis).
   - Game Modes: **Advantage** or **No-Ad (Deciding Point)**.
   - Tiebreak & Super Tiebreak logic built-in.
   - Full **Undo** functionality for accidental point inputs.

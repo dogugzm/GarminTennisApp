@@ -32,7 +32,10 @@ class GarminTennisMenu extends WatchUi.Menu2 {
             addItem(new WatchUi.MenuItem("End Match", "Finish & Save", "end", null));
         }
         
+        var gamesLabel = (state.gamesPerSet == 4) ? "4 Games (Fast4)" : "6 Games / Set";
+        
         addItem(new WatchUi.MenuItem("Sets", setsLabel, "sets", null));
+        addItem(new WatchUi.MenuItem("Set Length", gamesLabel, "length", null));
         addItem(new WatchUi.MenuItem("Game Mode", modeLabel, "mode", null));
     }
 }
@@ -72,6 +75,14 @@ class GarminTennisMenuDelegate extends WatchUi.Menu2InputDelegate {
             } else {
                 state.maxSets = 1;
                 item.setSubLabel("1 Set Match");
+            }
+        } else if (id.equals("length")) {
+            if (state.gamesPerSet == 6) {
+                state.gamesPerSet = 4;
+                item.setSubLabel("4 Games (Fast4)");
+            } else {
+                state.gamesPerSet = 6;
+                item.setSubLabel("6 Games / Set");
             }
         } else if (id.equals("mode")) {
             state.isNoAd = !state.isNoAd;

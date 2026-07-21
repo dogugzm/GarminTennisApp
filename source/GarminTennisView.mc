@@ -183,18 +183,19 @@ class GarminTennisView extends WatchUi.View {
         dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
         dc.drawText(cx, 220, Graphics.FONT_LARGE, "-", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
-        // 4. GAME BOXES
-        var boxW = 22;
+        // 4. GAME BOXES (DYNAMIC 4 OR 6 GAMES PER SET)
+        var numGameBoxes = state.gamesPerSet;
+        var boxW = (numGameBoxes == 4) ? 34 : 22;
         var boxH = 8;
-        var gap = 6;
-        var totalW = 6 * boxW + 5 * gap;
+        var gap = (numGameBoxes == 4) ? 8 : 6;
+        var totalW = numGameBoxes * boxW + (numGameBoxes - 1) * gap;
         var startX = cx - (totalW / 2);
         
         var p1Color = 0x00E5FF;
         var p2Color = 0xFF3333;
         var emptyColor = 0x222222;
 
-        for(var i = 0; i < 6; i++) {
+        for(var i = 0; i < numGameBoxes; i++) {
             dc.setColor((i < state.p1Games) ? p1Color : emptyColor, Graphics.COLOR_TRANSPARENT);
             dc.fillRoundedRectangle(startX + i * (boxW + gap), 320, boxW, boxH, 3);
             

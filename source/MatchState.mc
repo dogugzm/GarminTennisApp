@@ -22,6 +22,7 @@ class MatchState {
     var p1Sets = 0;
     var p2Sets = 0;
     var maxSets = 3; // 1, 3, or 5
+    var gamesPerSet = 6; // 4 or 6 games per set
     var isNoAd = false; // false = Advantage (Deuce), true = Karar Puanı (No-Ad)
 
     // Serve state tracking
@@ -358,18 +359,17 @@ class MatchState {
     }
 
     function checkSetWin() {
-        if (p1Games >= 6 && (p1Games - p2Games) >= 2) {
+        if (p1Games >= gamesPerSet && (p1Games - p2Games) >= 2) {
             p1Sets++;
             completedSets.add([p1Games, p2Games]);
             p1Games = 0;
             p2Games = 0;
-        } else if (p2Games >= 6 && (p2Games - p1Games) >= 2) {
+        } else if (p2Games >= gamesPerSet && (p2Games - p1Games) >= 2) {
             p2Sets++;
             completedSets.add([p1Games, p2Games]);
             p1Games = 0;
             p2Games = 0;
         }
-        // Basic implementation, does not include 6-6 tie-break logic yet
     }
 
     // Translate point counters into tennis scores
