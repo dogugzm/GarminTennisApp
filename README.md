@@ -32,6 +32,10 @@ A modern, high-performance Tennis score tracker and activity recorder applicatio
   - Tiebreak & Super Tiebreak logic built-in.
   - Full **Undo** functionality for accidental point inputs.
 
+- **⏱️ Flexible Activity & Warmup Mode:**
+  - **Start Activity:** Track calories, duration, and heart rate during warmup before starting the actual match.
+  - **Start Match:** Seamlessly transition into tennis match scoring & server selection at any time.
+
 - **📊 Comprehensive 3-Page Graphical Statistics:**
   - **Performance Card View:** Real-time Calorie burn (`kcal`), Elapsed Distance (`km`), Current Heart Rate (`bpm`), and Match Duration timer.
   - **Serve Analytics View:** Graphical progress bars for 1st Serve %, 2nd Serve %, and Double Fault (DF) counts.

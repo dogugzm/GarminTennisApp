@@ -25,6 +25,7 @@ class MatchState {
     var isNoAd = false; // false = Advantage (Deuce), true = Karar Puanı (No-Ad)
 
     // Serve state tracking
+    var isActivityStarted = false;
     var isMatchStarted = false;
     var isPaused = false;
     var server = 1; // 1 = Me, 2 = Opponent
@@ -72,6 +73,7 @@ class MatchState {
         p1Sets = 0;
         p2Sets = 0;
         
+        isActivityStarted = false;
         isMatchStarted = false;
         isPaused = false;
         server = 1;
@@ -88,10 +90,12 @@ class MatchState {
         history = [];
         completedSets = [];
     }
-    
-    function startMatch(startingServer) {
-        server = startingServer;
-        isMatchStarted = true;
+
+    function startActivity() {
+        if (isActivityStarted) { return; }
+        
+        isActivityStarted = true;
+        isMatchStarted = false;
         isPaused = false;
         lastTimerStart = System.getTimer();
 
@@ -102,7 +106,7 @@ class MatchState {
 
         if (Toybox has :ActivityRecording) {
             session = ActivityRecording.createSession({
-                :name => "Tenis Maçı",
+                :name => "Tennis Match",
                 :sport => ActivityRecording.SPORT_TENNIS,
                 :subSport => ActivityRecording.SUB_SPORT_GENERIC
             });
@@ -117,6 +121,15 @@ class MatchState {
             session.start();
             updateFitFields();
         }
+    }
+    
+    function startMatch(startingServer) {
+        if (!isActivityStarted) {
+            startActivity();
+        }
+        server = startingServer;
+        isMatchStarted = true;
+        isPaused = false;
     }
 
     function onPosition(info as Position.Info) as Void {
@@ -138,7 +151,7 @@ class MatchState {
     }
 
     function togglePause() {
-        if (!isMatchStarted) { return; }
+        if (!isActivityStarted) { return; }
         
         if (isPaused) {
             // Resume
@@ -181,7 +194,7 @@ class MatchState {
     }
 
     function getMatchDurationSeconds() {
-        if (!isMatchStarted) { return 0; }
+        if (!isActivityStarted) { return 0; }
         
         var totalMs = elapsedTime;
         if (!isPaused) {
