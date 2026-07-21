@@ -114,7 +114,7 @@ class StatsView extends WatchUi.View {
 
             // Footer hint
             dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(cx, 375, Graphics.FONT_XTINY, "Serve Stats >", centerVc);
+            dc.drawText(cx, 375, Graphics.FONT_XTINY, "v Serve Stats v", centerVc);
 
         } else if (page == 1) {
             // --- PAGE 1: SERVE STATS ---
@@ -177,7 +177,7 @@ class StatsView extends WatchUi.View {
             }
 
             dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(cx, 375, Graphics.FONT_XTINY, "Set Details >", centerVc);
+            dc.drawText(cx, 375, Graphics.FONT_XTINY, "v Set Details v", centerVc);
 
         } else if (page == 2) {
             // --- PAGE 2: SET SUMMARY ---
@@ -209,7 +209,7 @@ class StatsView extends WatchUi.View {
             }
 
             dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(cx, 375, Graphics.FONT_XTINY, "< Performance", centerVc);
+            dc.drawText(cx, 375, Graphics.FONT_XTINY, "^ Performance ^", centerVc);
         }
     }
 }
@@ -247,12 +247,12 @@ class StatsDelegate extends WatchUi.BehaviorDelegate {
 
     function onSwipe(swipeEvent as WatchUi.SwipeEvent) as Boolean {
         var dir = swipeEvent.getDirection();
-        if (dir == WatchUi.SWIPE_DOWN || dir == WatchUi.SWIPE_LEFT) {
-            StatsView.page = (StatsView.page + 1) % 3;
-            WatchUi.requestUpdate();
-            return true;
-        } else if (dir == WatchUi.SWIPE_UP || dir == WatchUi.SWIPE_RIGHT) {
-            StatsView.page = (StatsView.page + 2) % 3;
+        if (dir == WatchUi.SWIPE_DOWN || dir == WatchUi.SWIPE_UP) {
+            if (dir == WatchUi.SWIPE_DOWN) {
+                StatsView.page = (StatsView.page + 1) % 3;
+            } else {
+                StatsView.page = (StatsView.page + 2) % 3;
+            }
             WatchUi.requestUpdate();
             return true;
         }
