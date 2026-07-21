@@ -24,8 +24,9 @@ A modern, high-performance Tennis score tracker and activity recorder applicatio
 
 ## ✨ Features
 
-- **🎾 Real-time Tennis Score Tracking:**
+- **🎾 Real-time Tennis Score & Serve Tracking:**
   - Standard point scoring (0, 15, 30, 40, Game, Deuce, Advantage).
+  - Live 1st Serve, 2nd Serve & Double Fault (DF) tracking.
   - Configurable Sets (1 Set, Best of 3, Best of 5).
   - Game Modes: **Advantage** or **No-Ad (Deciding Point)**.
   - Tiebreak & Super Tiebreak logic built-in.
