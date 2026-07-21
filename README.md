@@ -61,9 +61,10 @@ A modern, high-performance Tennis score tracker and activity recorder applicatio
 | :--- | :--- | :--- |
 | **UP Button (Top Left)** | Score point for **OPPONENT** | Scroll Up / Previous Page |
 | **DOWN Button (Bottom Left)** | Score point for **YOU** | Scroll Down / Next Page |
+| **LIGHT / MENU Key (Middle Left)** | Register **Serve Fault / Miss** (1st ➔ 2nd ➔ Double Fault) | Toggle Backlight |
 | **SELECT / START (Top Right)** | Open In-Match Menu / Pause | Select / Confirm |
-| **BACK (Bottom Right)** | Serve Selection / Back | Return / Close |
-| **Swipe Left / Right** | Switch Stats Pages | - |
+| **BACK / LAP (Bottom Right)** | **Undo** Last Point | Return / Close |
+| **Swipe Up / Down** | Switch Stats Pages | - |
 
 ---
 
