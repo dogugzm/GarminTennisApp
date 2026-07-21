@@ -1,8 +1,12 @@
 # Connect IQ Build Outputs
 bin/
 gen/
+build/
+source/Build/
 *.prg
 *.iq
+*.mir
+*.xml
 
 # Developer Keys & Certificates
 *.der
