@@ -81,22 +81,36 @@ class GarminTennisDelegate extends WatchUi.BehaviorDelegate {
     // TOUCH TAP SELECTION
     function onTap(clickEvent as WatchUi.ClickEvent) as Boolean {
         var app = Application.getApp() as GarminTennisApp;
+        var coords = clickEvent.getCoordinates();
+        var y = coords[1];
+        var dev = System.getDeviceSettings();
+        var cy = dev.screenHeight / 2;
+
         if (!app.matchState.isMatchStarted) {
-            var coords = clickEvent.getCoordinates();
-            var y = coords[1];
-            var dev = System.getDeviceSettings();
-            var cy = dev.screenHeight / 2;
             if (y < cy) {
-                // Top Half: Opponent
+                // Top Half: Opponent Serves
                 app.matchState.startMatch(2);
             } else {
-                // Bottom Half: Me
+                // Bottom Half: Me Serves
                 app.matchState.startMatch(1);
             }
             WatchUi.requestUpdate();
             return true;
+        } else {
+            // MATCH IN PROGRESS TOUCH TAPS
+            if (y < cy - 40) {
+                // Top Half Tap: Opponent Point
+                app.matchState.pointWonBy(2);
+            } else if (y > cy + 40) {
+                // Bottom Half Tap: My Point
+                app.matchState.pointWonBy(1);
+            } else {
+                // Center Tap: Open In-Match Menu
+                WatchUi.pushView(new InMatchMenu(), new InMatchMenuDelegate(), WatchUi.SLIDE_UP);
+            }
+            WatchUi.requestUpdate();
+            return true;
         }
-        return false;
     }
 
     // SWIPE (DOKUNMATİK KAYDIRMA İLE İSTATİSTİKLERE GEÇİŞ)

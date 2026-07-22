@@ -263,6 +263,10 @@ class StatsDelegate extends WatchUi.BehaviorDelegate {
         return false;
     }
 
+    function onTap(clickEvent as WatchUi.ClickEvent) as Boolean {
+        return onNextPage();
+    }
+
     function onBack() as Boolean {
         WatchUi.popView(WatchUi.SLIDE_RIGHT);
         return true;
