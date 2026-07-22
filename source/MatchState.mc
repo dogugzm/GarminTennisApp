@@ -219,6 +219,7 @@ class MatchState {
             session = null;
         }
         resetMatch();
+        System.exit();
     }
 
     function discardMatch() {
@@ -230,6 +231,7 @@ class MatchState {
             session = null;
         }
         resetMatch();
+        System.exit();
     }
 
     function getMatchDurationSeconds() {

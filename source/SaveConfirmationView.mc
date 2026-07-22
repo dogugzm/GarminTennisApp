@@ -127,16 +127,10 @@ class SaveConfirmationDelegate extends WatchUi.BehaviorDelegate {
     function saveAndExit() {
         var app = Application.getApp() as GarminTennisApp;
         app.matchState.saveMatch();
-        WatchUi.popView(WatchUi.SLIDE_RIGHT);
-        WatchUi.popView(WatchUi.SLIDE_RIGHT);
-        WatchUi.popView(WatchUi.SLIDE_RIGHT);
     }
 
     function discardAndExit() {
         var app = Application.getApp() as GarminTennisApp;
         app.matchState.discardMatch();
-        WatchUi.popView(WatchUi.SLIDE_RIGHT);
-        WatchUi.popView(WatchUi.SLIDE_RIGHT);
-        WatchUi.popView(WatchUi.SLIDE_RIGHT);
     }
 }
