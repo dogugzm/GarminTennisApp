@@ -8,6 +8,7 @@ class MatchState {
 
     // FIT Session & Custom Fields
     var session = null;
+    // Session Summary Fields (Activity Summary / Stats Tab)
     var fitField1stServe = null;
     var fitField2ndServe = null;
     var fitFieldDoubleFaults = null;
@@ -16,6 +17,16 @@ class MatchState {
     var fitFieldP2Sets = null;
     var fitFieldGamesWon = null;
     var fitFieldGamesLost = null;
+
+    // Record Chart Fields (Charts Tab)
+    var fitRec1stServe = null;
+    var fitRec2ndServe = null;
+    var fitRecDoubleFaults = null;
+    var fitRecMomentum = null;
+    var fitRecP1Sets = null;
+    var fitRecP2Sets = null;
+    var fitRecGamesWon = null;
+    var fitRecGamesLost = null;
 
     // 0=0, 1=15, 2=30, 3=40
     var p1Points = 0;
@@ -77,6 +88,15 @@ class MatchState {
         fitFieldGamesWon = null;
         fitFieldGamesLost = null;
 
+        fitRec1stServe = null;
+        fitRec2ndServe = null;
+        fitRecDoubleFaults = null;
+        fitRecMomentum = null;
+        fitRecP1Sets = null;
+        fitRecP2Sets = null;
+        fitRecGamesWon = null;
+        fitRecGamesLost = null;
+
         p1Points = 0;
         p2Points = 0;
         p1Games = 0;
@@ -124,14 +144,25 @@ class MatchState {
 
             // Create Custom FIT Fields for Garmin Connect
             if (session has :createField) {
-                fitField1stServe = session.createField("1st_serve_pct", 0, FitContributor.DATA_TYPE_UINT8, {:units => "%"});
-                fitField2ndServe = session.createField("2nd_serve_pct", 1, FitContributor.DATA_TYPE_UINT8, {:units => "%"});
-                fitFieldDoubleFaults = session.createField("double_faults", 2, FitContributor.DATA_TYPE_UINT8, {:units => "count"});
-                fitFieldMomentum = session.createField("game_momentum", 3, FitContributor.DATA_TYPE_SINT8, {:units => "lead"});
-                fitFieldP1Sets = session.createField("p1_sets", 4, FitContributor.DATA_TYPE_UINT8, {:units => "sets"});
-                fitFieldP2Sets = session.createField("p2_sets", 5, FitContributor.DATA_TYPE_UINT8, {:units => "sets"});
-                fitFieldGamesWon = session.createField("games_won", 6, FitContributor.DATA_TYPE_UINT8, {:units => "games"});
-                fitFieldGamesLost = session.createField("games_lost", 7, FitContributor.DATA_TYPE_UINT8, {:units => "games"});
+                // 1. Session Summary Fields (for Garmin Connect Activity Summary / Stats Tab)
+                fitField1stServe = session.createField("1st_serve_pct", 0, FitContributor.DATA_TYPE_UINT8, {:mesgType => FitContributor.MESG_TYPE_SESSION, :units => "%"});
+                fitField2ndServe = session.createField("2nd_serve_pct", 1, FitContributor.DATA_TYPE_UINT8, {:mesgType => FitContributor.MESG_TYPE_SESSION, :units => "%"});
+                fitFieldDoubleFaults = session.createField("double_faults", 2, FitContributor.DATA_TYPE_UINT8, {:mesgType => FitContributor.MESG_TYPE_SESSION, :units => "count"});
+                fitFieldMomentum = session.createField("game_momentum", 3, FitContributor.DATA_TYPE_SINT8, {:mesgType => FitContributor.MESG_TYPE_SESSION, :units => "lead"});
+                fitFieldP1Sets = session.createField("p1_sets", 4, FitContributor.DATA_TYPE_UINT8, {:mesgType => FitContributor.MESG_TYPE_SESSION, :units => "sets"});
+                fitFieldP2Sets = session.createField("p2_sets", 5, FitContributor.DATA_TYPE_UINT8, {:mesgType => FitContributor.MESG_TYPE_SESSION, :units => "sets"});
+                fitFieldGamesWon = session.createField("games_won", 6, FitContributor.DATA_TYPE_UINT8, {:mesgType => FitContributor.MESG_TYPE_SESSION, :units => "games"});
+                fitFieldGamesLost = session.createField("games_lost", 7, FitContributor.DATA_TYPE_UINT8, {:mesgType => FitContributor.MESG_TYPE_SESSION, :units => "games"});
+
+                // 2. Record Chart Fields (for Garmin Connect Charts Tab)
+                fitRec1stServe = session.createField("1st_serve_pct_chart", 8, FitContributor.DATA_TYPE_UINT8, {:mesgType => FitContributor.MESG_TYPE_RECORD, :units => "%"});
+                fitRec2ndServe = session.createField("2nd_serve_pct_chart", 9, FitContributor.DATA_TYPE_UINT8, {:mesgType => FitContributor.MESG_TYPE_RECORD, :units => "%"});
+                fitRecDoubleFaults = session.createField("double_faults_chart", 10, FitContributor.DATA_TYPE_UINT8, {:mesgType => FitContributor.MESG_TYPE_RECORD, :units => "count"});
+                fitRecMomentum = session.createField("game_momentum_chart", 11, FitContributor.DATA_TYPE_SINT8, {:mesgType => FitContributor.MESG_TYPE_RECORD, :units => "lead"});
+                fitRecP1Sets = session.createField("p1_sets_chart", 12, FitContributor.DATA_TYPE_UINT8, {:mesgType => FitContributor.MESG_TYPE_RECORD, :units => "sets"});
+                fitRecP2Sets = session.createField("p2_sets_chart", 13, FitContributor.DATA_TYPE_UINT8, {:mesgType => FitContributor.MESG_TYPE_RECORD, :units => "sets"});
+                fitRecGamesWon = session.createField("games_won_chart", 14, FitContributor.DATA_TYPE_UINT8, {:mesgType => FitContributor.MESG_TYPE_RECORD, :units => "games"});
+                fitRecGamesLost = session.createField("games_lost_chart", 15, FitContributor.DATA_TYPE_UINT8, {:mesgType => FitContributor.MESG_TYPE_RECORD, :units => "games"});
             }
 
             session.start();
@@ -153,17 +184,16 @@ class MatchState {
     }
 
     function updateFitFields() {
-        if (fitField1stServe != null) {
-            var p1st = (firstServesTotal > 0) ? ((firstServesIn * 100) / firstServesTotal).toNumber() : 0;
-            fitField1stServe.setData(p1st);
-        }
-        if (fitField2ndServe != null) {
-            var p2nd = (secondServesTotal > 0) ? ((secondServesIn * 100) / secondServesTotal).toNumber() : 0;
-            fitField2ndServe.setData(p2nd);
-        }
-        if (fitFieldDoubleFaults != null) {
-            fitFieldDoubleFaults.setData(doubleFaults);
-        }
+        var p1st = (firstServesTotal > 0) ? ((firstServesIn * 100) / firstServesTotal).toNumber() : 0;
+        if (fitField1stServe != null) { fitField1stServe.setData(p1st); }
+        if (fitRec1stServe != null) { fitRec1stServe.setData(p1st); }
+
+        var p2nd = (secondServesTotal > 0) ? ((secondServesIn * 100) / secondServesTotal).toNumber() : 0;
+        if (fitField2ndServe != null) { fitField2ndServe.setData(p2nd); }
+        if (fitRec2ndServe != null) { fitRec2ndServe.setData(p2nd); }
+
+        if (fitFieldDoubleFaults != null) { fitFieldDoubleFaults.setData(doubleFaults); }
+        if (fitRecDoubleFaults != null) { fitRecDoubleFaults.setData(doubleFaults); }
         
         var totalGamesWon = p1Games;
         var totalGamesLost = p2Games;
@@ -172,21 +202,21 @@ class MatchState {
             totalGamesLost += completedSets[i][1];
         }
 
-        if (fitFieldMomentum != null) {
-            fitFieldMomentum.setData(totalGamesWon - totalGamesLost);
-        }
-        if (fitFieldP1Sets != null) {
-            fitFieldP1Sets.setData(p1Sets);
-        }
-        if (fitFieldP2Sets != null) {
-            fitFieldP2Sets.setData(p2Sets);
-        }
-        if (fitFieldGamesWon != null) {
-            fitFieldGamesWon.setData(totalGamesWon);
-        }
-        if (fitFieldGamesLost != null) {
-            fitFieldGamesLost.setData(totalGamesLost);
-        }
+        var momentum = totalGamesWon - totalGamesLost;
+        if (fitFieldMomentum != null) { fitFieldMomentum.setData(momentum); }
+        if (fitRecMomentum != null) { fitRecMomentum.setData(momentum); }
+
+        if (fitFieldP1Sets != null) { fitFieldP1Sets.setData(p1Sets); }
+        if (fitRecP1Sets != null) { fitRecP1Sets.setData(p1Sets); }
+
+        if (fitFieldP2Sets != null) { fitFieldP2Sets.setData(p2Sets); }
+        if (fitRecP2Sets != null) { fitRecP2Sets.setData(p2Sets); }
+
+        if (fitFieldGamesWon != null) { fitFieldGamesWon.setData(totalGamesWon); }
+        if (fitRecGamesWon != null) { fitRecGamesWon.setData(totalGamesWon); }
+
+        if (fitFieldGamesLost != null) { fitFieldGamesLost.setData(totalGamesLost); }
+        if (fitRecGamesLost != null) { fitRecGamesLost.setData(totalGamesLost); }
     }
 
     function togglePause() {

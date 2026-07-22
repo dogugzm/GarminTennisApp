@@ -10,8 +10,9 @@ source/Build/
 
 # Developer Keys & Certificates
 *.der
+*.pem
 *.key
-developer_key
+developer_key*
 
 # OS Generated Files
 .DS_Store
