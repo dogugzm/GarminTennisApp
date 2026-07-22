@@ -6,6 +6,12 @@
 
 A modern, high-performance Tennis score tracker and activity recorder application built specifically for the **Garmin fēnix® 8** smartwatch (47mm & 51mm AMOLED / Solar) using the Connect IQ SDK.
 
+## 🎨 Store Media Assets
+
+| Hero Banner (1440x720) | Cover Image (500x500) |
+| :--- | :--- |
+| <img src="screenshots/hero_image.png" width="500" alt="Garmin Tennis Hero Banner" /> | <img src="screenshots/cover_image.png" width="250" alt="Garmin Tennis Cover Image" /> |
+
 ---
 
 ## 📸 App Screenshots & User Interface
