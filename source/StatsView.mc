@@ -43,9 +43,9 @@ class StatsView extends WatchUi.View {
         var leftVc = Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER;
         var rightVc = Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER;
 
-        // 3-Dot Page Indicator (Top)
-        for (var i = 0; i < 3; i++) {
-            var dotX = cx - 20 + i * 20;
+        // 4-Dot Page Indicator (Top)
+        for (var i = 0; i < 4; i++) {
+            var dotX = cx - 30 + i * 20;
             if (i == page) {
                 dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
                 dc.fillCircle(dotX, 22, 4);
@@ -177,10 +177,70 @@ class StatsView extends WatchUi.View {
             }
 
             dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(cx, 375, Graphics.FONT_XTINY, "v Set Details v", centerVc);
+            dc.drawText(cx, 375, Graphics.FONT_XTINY, "v Summary Table v", centerVc);
 
         } else if (page == 2) {
-            // --- PAGE 2: SET SUMMARY ---
+            // --- PAGE 2: NATIVE MATCH SUMMARY TABLE ---
+            dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(cx, 52, Graphics.FONT_XTINY, "MATCH SUMMARY", centerVc);
+
+            var tblW = 300;
+            var tblX = cx - (tblW / 2);
+            var startY = 80;
+            var rowH = 40;
+
+            // Total Games calculation
+            var totP1Games = state.p1Games;
+            var totP2Games = state.p2Games;
+            for(var i=0; i<state.completedSets.size(); i++) {
+                totP1Games += state.completedSets[i][0];
+                totP2Games += state.completedSets[i][1];
+            }
+
+            var p1st = (state.firstServesTotal > 0) ? ((state.firstServesIn * 100) / state.firstServesTotal).toNumber() : 0;
+            var p2nd = (state.secondServesTotal > 0) ? ((state.secondServesIn * 100) / state.secondServesTotal).toNumber() : 0;
+
+            // TABLE HEADER ROW
+            dc.setColor(0x222222, Graphics.COLOR_TRANSPARENT);
+            dc.fillRoundedRectangle(tblX, startY, tblW, 30, 6);
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(tblX + 15, startY + 15, Graphics.FONT_XTINY, "STAT", leftVc);
+            dc.setColor(0x00E5FF, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(tblX + 190, startY + 15, Graphics.FONT_XTINY, "YOU", centerVc);
+            dc.setColor(0xFF3333, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(tblX + 260, startY + 15, Graphics.FONT_XTINY, "OPP", centerVc);
+
+            // DATA ROWS DATA MATRIX
+            var rows = [
+                ["Sets Won", state.p1Sets.toString(), state.p2Sets.toString()],
+                ["Games Won", totP1Games.toString(), totP2Games.toString()],
+                ["1st Serve %", p1st.toString() + "%", "--"],
+                ["2nd Serve %", p2nd.toString() + "%", "--"],
+                ["Double Faults", state.doubleFaults.toString(), "--"]
+            ];
+
+            for (var r = 0; r < rows.size(); r++) {
+                var ry = startY + 36 + r * 44;
+                var bgCol = (r % 2 == 0) ? 0x111111 : 0x1A1A1A;
+                
+                dc.setColor(bgCol, Graphics.COLOR_TRANSPARENT);
+                dc.fillRoundedRectangle(tblX, ry, tblW, 38, 6);
+
+                dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+                dc.drawText(tblX + 15, ry + 19, Graphics.FONT_XTINY, rows[r][0], leftVc);
+                
+                dc.setColor(0x00E5FF, Graphics.COLOR_TRANSPARENT);
+                dc.drawText(tblX + 190, ry + 19, Graphics.FONT_XTINY, rows[r][1], centerVc);
+                
+                dc.setColor(0xFF3333, Graphics.COLOR_TRANSPARENT);
+                dc.drawText(tblX + 260, ry + 19, Graphics.FONT_XTINY, rows[r][2], centerVc);
+            }
+
+            dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(cx, 380, Graphics.FONT_XTINY, "v Set Details v", centerVc);
+
+        } else if (page == 3) {
+            // --- PAGE 3: SET SUMMARY ---
             dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
             dc.drawText(cx, 52, Graphics.FONT_XTINY, "SET SUMMARY", centerVc);
 
@@ -230,13 +290,13 @@ class StatsDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onNextPage() as Boolean {
-        StatsView.page = (StatsView.page + 1) % 3;
+        StatsView.page = (StatsView.page + 1) % 4;
         WatchUi.requestUpdate();
         return true;
     }
 
     function onPreviousPage() as Boolean {
-        StatsView.page = (StatsView.page + 2) % 3;
+        StatsView.page = (StatsView.page + 3) % 4;
         WatchUi.requestUpdate();
         return true;
     }
