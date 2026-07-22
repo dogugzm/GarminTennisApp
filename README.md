@@ -45,8 +45,14 @@ A modern, high-performance Tennis score tracker and activity recorder applicatio
 
 - **❤️ Garmin FIT Activity & Sensor Integration:**
   - Native Activity Recording (`ActivityRecording.SPORT_TENNIS`).
-  - Saves tennis match statistics, total calories, distance, and heart rate zones directly to **Garmin Connect**.
-  - Custom FIT Data Contributors for tennis-specific metrics.
+  - Custom FIT Data Contributors automatically logged to **Garmin Connect**:
+    1. **`1st Serve %`** (First serve in percentage)
+    2. **`2nd Serve %`** (Second serve in percentage)
+    3. **`Double Faults`** (Total double fault count)
+    4. **`Sets Won (You)`** (Total sets won by user)
+    5. **`Sets Won (Opponent)`** (Total sets won by opponent)
+    6. **`Games Won`** (Total game count won across all sets)
+    7. **`Games Lost`** (Total game count lost across all sets)
 
 - **🍃 Real-time Weather & Wind Gauge:**
   - Live wind bearing arrow indicator and wind speed reading via Garmin Weather API.

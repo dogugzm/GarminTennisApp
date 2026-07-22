@@ -11,6 +11,10 @@ class MatchState {
     var fitField1stServe = null;
     var fitField2ndServe = null;
     var fitFieldDoubleFaults = null;
+    var fitFieldP1Sets = null;
+    var fitFieldP2Sets = null;
+    var fitFieldGamesWon = null;
+    var fitFieldGamesLost = null;
 
     // 0=0, 1=15, 2=30, 3=40
     var p1Points = 0;
@@ -66,6 +70,10 @@ class MatchState {
         fitField1stServe = null;
         fitField2ndServe = null;
         fitFieldDoubleFaults = null;
+        fitFieldP1Sets = null;
+        fitFieldP2Sets = null;
+        fitFieldGamesWon = null;
+        fitFieldGamesLost = null;
 
         p1Points = 0;
         p2Points = 0;
@@ -117,6 +125,10 @@ class MatchState {
                 fitField1stServe = session.createField("1st_serve_pct", 0, FitContributor.DATA_TYPE_UINT8, {:units => "%"});
                 fitField2ndServe = session.createField("2nd_serve_pct", 1, FitContributor.DATA_TYPE_UINT8, {:units => "%"});
                 fitFieldDoubleFaults = session.createField("double_faults", 2, FitContributor.DATA_TYPE_UINT8, {:units => "count"});
+                fitFieldP1Sets = session.createField("p1_sets", 3, FitContributor.DATA_TYPE_UINT8, {:units => "sets"});
+                fitFieldP2Sets = session.createField("p2_sets", 4, FitContributor.DATA_TYPE_UINT8, {:units => "sets"});
+                fitFieldGamesWon = session.createField("games_won", 5, FitContributor.DATA_TYPE_UINT8, {:units => "games"});
+                fitFieldGamesLost = session.createField("games_lost", 6, FitContributor.DATA_TYPE_UINT8, {:units => "games"});
             }
 
             session.start();
@@ -148,6 +160,26 @@ class MatchState {
         }
         if (fitFieldDoubleFaults != null) {
             fitFieldDoubleFaults.setData(doubleFaults);
+        }
+        if (fitFieldP1Sets != null) {
+            fitFieldP1Sets.setData(p1Sets);
+        }
+        if (fitFieldP2Sets != null) {
+            fitFieldP2Sets.setData(p2Sets);
+        }
+        
+        var totalGamesWon = p1Games;
+        var totalGamesLost = p2Games;
+        for(var i=0; i<completedSets.size(); i++) {
+            totalGamesWon += completedSets[i][0];
+            totalGamesLost += completedSets[i][1];
+        }
+        
+        if (fitFieldGamesWon != null) {
+            fitFieldGamesWon.setData(totalGamesWon);
+        }
+        if (fitFieldGamesLost != null) {
+            fitFieldGamesLost.setData(totalGamesLost);
         }
     }
 
