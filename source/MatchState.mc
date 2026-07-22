@@ -402,11 +402,23 @@ class MatchState {
             completedSets.add([p1Games, p2Games]);
             p1Games = 0;
             p2Games = 0;
+            checkMatchWin();
         } else if (p2Games >= gamesPerSet && (p2Games - p1Games) >= 2) {
             p2Sets++;
             completedSets.add([p1Games, p2Games]);
             p1Games = 0;
             p2Games = 0;
+            checkMatchWin();
+        }
+    }
+
+    function checkMatchWin() {
+        var targetSets = (maxSets / 2) + 1; // 1 set for 1-set match, 2 sets for 3-set match
+        if (p1Sets >= targetSets || p2Sets >= targetSets) {
+            if (session != null && session.isRecording()) {
+                session.stop();
+            }
+            WatchUi.pushView(new SaveConfirmationView(), new SaveConfirmationDelegate(), WatchUi.SLIDE_UP);
         }
     }
 

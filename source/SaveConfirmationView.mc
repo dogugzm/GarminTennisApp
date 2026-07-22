@@ -42,12 +42,24 @@ class SaveConfirmationView extends WatchUi.View {
         dc.drawText(75, h - 100, Graphics.FONT_XTINY, "DISCARD (DOWN)", Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
 
         // 3. CENTER: MATCH SUMMARY
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(cx, cy - 60, Graphics.FONT_MEDIUM, "END MATCH?", Graphics.TEXT_JUSTIFY_CENTER);
+        var matchTitle = "END MATCH?";
+        var titleColor = Graphics.COLOR_WHITE;
+        var targetSets = (state.maxSets / 2) + 1;
+
+        if (state.p1Sets >= targetSets) {
+            matchTitle = "MATCH WON! 🎉";
+            titleColor = 0x00E5FF;
+        } else if (state.p2Sets >= targetSets) {
+            matchTitle = "MATCH OVER";
+            titleColor = 0xFF3333;
+        }
+
+        dc.setColor(titleColor, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(cx, cy - 60, Graphics.FONT_MEDIUM, matchTitle, Graphics.TEXT_JUSTIFY_CENTER);
 
         // Score Summary
         var scoreSummary = state.p1Sets + " - " + state.p2Sets + " Sets";
-        dc.setColor(0x00E5FF, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.drawText(cx, cy - 10, Graphics.FONT_MEDIUM, scoreSummary, Graphics.TEXT_JUSTIFY_CENTER);
 
         // Time & Calories
