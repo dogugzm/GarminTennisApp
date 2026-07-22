@@ -6,12 +6,14 @@
     <string id="fit_1st_serve_label">1st Serve %</string>
     <string id="fit_2nd_serve_label">2nd Serve %</string>
     <string id="fit_double_faults_label">Double Faults</string>
+    <string id="fit_game_momentum_label">Match Momentum (Game Lead)</string>
     <string id="fit_p1_sets_label">Sets Won (You)</string>
     <string id="fit_p2_sets_label">Sets Won (Opponent)</string>
     <string id="fit_games_won_label">Games Won</string>
     <string id="fit_games_lost_label">Games Lost</string>
     <string id="unit_pct">%</string>
     <string id="unit_count">count</string>
+    <string id="unit_lead">lead</string>
     <string id="unit_sets">sets</string>
     <string id="unit_games">games</string>
 </resources>
